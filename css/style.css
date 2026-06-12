@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+i,em{
+    font-style: italic;
+}
+
+b{
+    font-weight: bold;
+}
+
+u{
+    text-decoration: underline;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+.menu{
+    width: 100%;
+    background-color: #455bc4;
+    padding: 5px 20px 5px 20px;
+
+}
+
+.menu li{
+    display: inline-block;
+    font-size: 1rem;
+    padding: 5px;
+    border-right: 3px solid white;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold ;
+    text-align: center;
+}
+
+.menu li a:hover{
+    background-color: white;
+    color: #455bc4;
+}
+
+.menu li a:active{
+    background-color: lightblue;
+    color: #455bc4;
+}
+
+.menu li:last-child{
+    border-right: none;
+}
+
+.menu li a::before{
+    content: "\25B6";
+    margin-right: 5px;   
+}
+
+/* form */
+
+form{
+    background-color: rgb(224, 224, 222);
+
+    width: 50%;
+    margin: auto;
+}
+
+form .body-cv{
+    padding: 30px;
+    line-height: 1.4;
+}
+
+form .body-cv label{
+    display: block;
+    width: 80%;
+    
+}
+form .body-cv label input{
+    border-radius: 5px;
+    display: block;
+}
+form .body-cv label select{
+    display: block;
+}
+
+form .body-cv label input[type="radio"]{
+    display: inline-block;
+}
+
+.avt-img{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.text-input{
+    padding: 4px 6px;
+}
+
+input:focus{
+    background-color: aquamarine;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+:required:after{
+    content: " *";
+    color: red;
+}
+
+a{
+    text-decoration: none;
+    background-color: azure;
+    color: black;
+    border-radius: 5px;
+}
+.sub{
+    margin-top: 10px;
+}
+
+a:hover{
+    background-color: lightblue;
+}
+
+a:active{
+    background-color: lightgray;
+}

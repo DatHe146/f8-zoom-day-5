@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <form autocomplete="off">
+        <div class="body-cv">
+            <h1>Register</h1>
+            <label for="name"> Display Name
+                <input type="text" name="name" id="name" spellcheck="false" class="text-input" required> 
+            </label>
+            <label for="email">Email
+                <input type="email" id="email" name="email" spellcheck="false"  class="text-input" required>
+            </label>
+            <label for="phone">Phone Number
+                <input type="tel" id="phone" name="phone" spellcheck="false" class="text-input" required>
+            </label>
+            <label for="pass">Password
+                <input type="password" name="pass" id="pass" class="text-input" required>
+            </label>
+            <label for="confirmPass">Confirm Password
+                <input type="password" name="confirmPass" id="confirmPass" class="text-input" required>
+            </label>
+            <label>
+                <input type="radio" name="gender" id = "male" required> Male
+            </label>
+            <label>
+                <input type="radio" name="gender" id = "female" required> Female
+            </label>
+            <label>
+                <input type="radio" name="gender" id = "other" required > Other
+            </label>
+            <label for="date">Date of Birth
+                <input type="date" name="date" id="date" required>
+            </label>
+            <label for="address">Address
+                <input type="text" name="address" id="address" spellcheck="false" class="text-input" required>
+            </label>
+            <label for="avt-input">
+                <img class="avt-img" src="./img/image.png" alt="">
+            </label>
+            <input id="avt-input" hidden type="file" accept="image/**">
+            <label for="communicationPreferences">Communication Preferences
+                <select name="communicationPreferences" id="communicationPreferences" required>
+                    <option value="SubscribeToNewsletter">Subscribe to Newsletter</option>
+                    <option value="ReceivePromotionalEmails">Receive Promotional Emails</option>
+                    <option value="GetProductUpdates">Get Product Updates</option>
+                </select>
+            </label>
+            <div class="sub">
+                <a href="#">Submit</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
